@@ -29,8 +29,8 @@ const Navbar = () => {
         >
           Projects
         </Link>
-        {socialLinks?.map((social) => (
-          <Link href={social.link} alt={social.name}>
+        {socialLinks?.map((social,index) => (
+          <Link href={social.link} alt={social.name} key={index}>
             <img
               src={social.iconUrl.src}
               alt={social.name}
