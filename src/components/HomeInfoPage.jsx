@@ -65,11 +65,11 @@ const renderContent={
         // />
         <div className='info-box'>
       <p className='font-medium sm:text-xl text-center'>
-        Need a project done or looking for a dev? <br/> I'm just a few keystrokes away
+        Need a project done or looking for a dev? <br/> I am just a few keystrokes away
       </p>
 
       <Link href='/contact' className='neo-brutalism-white neo-btn'>
-        Let's talk
+        Lets talk
         <img src={arrow.src} alt='arrow' className='w-4 h-4 object-contain' />
       </Link>
     </div>
