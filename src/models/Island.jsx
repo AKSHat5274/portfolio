@@ -12,9 +12,10 @@
 import { a } from "@react-spring/three";
 import { useEffect, useRef } from "react";
 import { useGLTF } from "@react-three/drei";
-import { useFrame, useThree } from "@react-three/fiber";
+import { useFrame, useLoader, useThree } from "@react-three/fiber";
 
-import islandScene from "@/assets/3d/island.gib";
+// import islandScene from "";
+
 
 export function Island({
   isRotating,
@@ -23,10 +24,11 @@ export function Island({
   currentFocusPoint,
   ...props
 }) {
+    // const islandScene= useGLB('../assets/3d/island.glb')
   const islandRef = useRef();
   // Get access to the Three.js renderer and viewport
   const { gl, viewport } = useThree();
-  const { nodes, materials } = useGLTF(islandScene);
+  const { nodes, materials } = useGLTF("island.glb");
 
   // Use a ref for the last mouse x position
   const lastX = useRef(0);
@@ -60,10 +62,8 @@ export function Island({
     event.stopPropagation();
     event.preventDefault();
     if (isRotating) {
-      // If rotation is enabled, calculate the change in clientX position
       const clientX = event.touches ? event.touches[0].clientX : event.clientX;
 
-      // calculate the change in the horizontal position of the mouse cursor or touch input,
       // relative to the viewport's width
       const delta = (clientX - lastX.current) / viewport.width;
 

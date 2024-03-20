@@ -4,12 +4,15 @@ import shopify from './shopify.png'
 import starbucks from './starbucks.png'
 import tesla from './tesla.png'
 import logo from './logo.svg'
-
+import NC from './NC.png'
+import Parco from './Parco.png'
 export {
     hero,
     meta,
     shopify,
     starbucks,
     tesla,
-    logo
+    logo,
+    NC,
+    Parco
 }
