@@ -1,7 +1,7 @@
 import { useGLTF } from '@react-three/drei'
 import React from 'react'
 
-const Sky = () => {
+export const Sky = () => {
     const sky= useGLTF("sky.glb");
   return (
 <mesh>
@@ -10,4 +10,3 @@ const Sky = () => {
     )
 }
 
-export default Sky

@@ -4,12 +4,11 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useRef, useState } from "react";
 import Loader from "@/components/Loader";
 import { Island } from "@/models/Island";
-import Sky from "@/models/sky";
+import {Sky} from "@/models/Sky";
 import { Bird } from "@/models/Bird";
 import { Plane } from "@/models/Plane";
 import HomeInfoPage from "@/components/HomeInfoPage";
 // import sakura from 'sakura.mp3';
-import { soundoff, soundon } from "../../assets/icons";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
