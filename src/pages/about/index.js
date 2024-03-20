@@ -1,3 +1,4 @@
+import CTA from '@/components/CTA';
 import { skills,experiences } from '@/constants'
 import React from 'react'
 import {
@@ -43,7 +44,7 @@ const AboutPage = () => {
             teaming up with smart people. Here's the rundown:
           </p>
         </div>
-        <div className='mt-12 flex'>
+        <div className='mt-12 flex '>
           <VerticalTimeline>
             {experiences.map((experience, index) => (
               <VerticalTimelineElement
@@ -93,6 +94,7 @@ const AboutPage = () => {
           </VerticalTimeline>
         </div>
     </div>
+    <CTA/>
 </div>
     </section>
   )

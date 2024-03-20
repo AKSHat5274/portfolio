@@ -1,17 +1,19 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { Canvas } from "@react-three/fiber";
-import { Suspense, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 import Loader from "@/components/Loader";
 import { Island } from "@/models/Island";
 import Sky from "@/models/sky";
 import { Bird } from "@/models/Bird";
 import { Plane } from "@/models/Plane";
 import HomeInfoPage from "@/components/HomeInfoPage";
+// import sakura from 'sakura.mp3';
+import { soundoff, soundon } from "../../assets/icons";
 
 const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
+ 
   const [currentStage, setCurrentStage] = useState(1);
   const [IsRotating,setIsRotating]= useState(false);
   const adjustIslandForScreenSize = () => {
@@ -28,6 +30,7 @@ export default function Home() {
   }
     return [screenScale, screenPosition,rotation];
   };
+  
   const adjustBiplaneForScreenSize = () => {
     let screenScale, screenPosition;
 if(typeof window !== "undefined"){
@@ -69,12 +72,13 @@ if(typeof window !== "undefined"){
         <Bird/>
         <Plane
         isRotating={IsRotating}
-        planeScale={biplaneScale}
-        planePosition={biplanePosition}
+        scale={biplaneScale}
+        position={biplanePosition}
         rotation={[0,20,0]}
         />
           </Suspense>
       </Canvas>
+      
     </section>
   );
 }

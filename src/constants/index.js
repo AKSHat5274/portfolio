@@ -105,12 +105,15 @@ export const experiences = [
         company_name: "Namaste Credit",
         icon: NC,
         iconBg: "#accbe1",
-        date: "February 2023 - October 2024",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+        date: "February 2023 - October 2023",
+        points: [            
+            "•Engineered secure user registration and authentication mechanisms, curtailing unauthorized access incidents by 30%",
+            "•Integrated third-party APIs for user data validation and credit assessment, resulting in a 25% reduction in fraudulent loan applications.",
+            "•Contributed to developing software modules for embedded systems, resulting in a 15% improvement in code efficiency.",
+            "•Assisted in the optimization of performance-critical algorithms, leading to a 20% reduction in execution time.",
+            "•Implemented secure data encryption and access controls, ensuring the confidentiality and integrity of sensitive user information throughout the application process.",
+            "•Engineered a new mechanism for data flow from the loan origination system which decreased the loading times by 30%.",
+            "•Discovered the root cause of the slowdown, then swiftly migrated the application to Azure Cache for Redis, consequently enhancing loading speeds by 80%.",
         ],
     },
     {
@@ -137,12 +140,12 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/AKSHat5274',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/akshatsharma527',
     }
 ];
 
@@ -150,43 +153,43 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        name: 'JIRA clone/CRM Dashboard',
+        description: 'Developed a web application that helps the user visualize and manage the whole sales pipeline along with tasks and an event manager. Made with refine. dev framework along with graphql for the backend.',
+        link: 'https://github.com/AKSHat5274/crm-dashboard',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
+        name: 'Full Stack AI Saas Application',
+        description: 'Created a platform which generates user answers and generates user images with the help of AI. Deployed as a SAAS service. ',
+        link: 'https://github.com/AKSHat5274',
     },
     {
         iconUrl: car,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        name: 'Job Posting Application',
+        description: 'Built a job posting application using Java Spring boot which helps the user apply to job posts, compare companies and post reviews about them. Used Microservices and rest architecture along with kubernetes tools such as Docker',
+        link: 'https://github.com/AKSHat5274/Job-Posting-Application-Using-Java-Spring-boot-and-docker',
     },
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        name: 'Django truecaller API',
+        description: 'Built an API that can tell you if the number is a scam, we can search a person name using just his phone number. Used MySQL along with ORM in the project.',
+        link: 'https://github.com/AKSHat5274',
     },
     {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        name: 'Startup Landing Page',
+        description: 'Developed a web application for businesses who wants to showcase all of what they have to offer to their customers.It has user reveiws, plugins for videos and a dynamic UI which can highlight the product to its full potential.',
+        link: 'https://github.com/AKSHat5274/StartuplandingPage',
     },
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
         name: 'AI Summarizer Application',
         description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+        link: 'https://github.com/AKSHat5274/project_ai_summarizer',
     }
 ];
